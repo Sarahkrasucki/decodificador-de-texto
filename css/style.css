@@ -1,0 +1,267 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5FC;
+    color: #333;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    gap: 80px; 
+    margin: 40px;
+}
+
+.logo-alura {
+    width: 30px; 
+    height: auto; 
+    display: block; 
+}
+
+.input-section {
+    flex: 1;
+    margin-left: 40px;
+    margin-bottom: 72px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: auto;
+}
+
+.input-section h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.input-section textarea {
+    width: 100%;
+    padding: 0px;
+    font-size: 32px;
+    resize: none;
+    margin-bottom: 0px;
+    margin-top: 128px;
+    background-color: #F3F5FC; 
+    border: none; 
+    outline: none; 
+    color: #0A3871; 
+    font-family: Arial, sans-serif; 
+}
+
+#input-text::placeholder {
+    color: #0A3871; 
+    font-family: Arial, sans-serif; 
+    font-size: 32px; 
+}
+
+.input-section .options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-section .options img {
+    width: 16px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.input-section .options p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.input-section .buttons {
+    display: flex;
+    gap: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.input-section .buttons button {
+    padding: 15px 15%;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.input-section .buttons .encrypt-btn {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.input-section .buttons .decrypt-btn {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1.5px solid #0A3871;
+    border-left: none;
+}
+
+.output-section {
+    flex: 1;
+    min-height: 90%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 38%;
+    
+}
+
+.output-section img {
+    width: 55%;
+    height: auto;
+    padding: 5px;
+}
+
+.output-section h2 {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#output-text {
+    font-size: 16px; 
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.output-section p {
+    font-size: 24px;
+    color: #888;
+    text-align: center;
+}
+
+.copiar-btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    margin-top: auto; 
+    display: none; 
+    margin-bottom: 30px;
+}
+
+.copiar-btn button {
+    padding: 15px 30%;
+    border: 2px solid #0A3871;
+    border-radius: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    width: 100%; 
+}
+
+.copiar-btn button:active {
+    background-color: #0A3871;
+    color: #ffffff;
+}
+
+.copiar-btn .copiar-frase {
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    border-left: none;
+}
+
+.footer {
+    background-color: #0A3871;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos */
+        gap: 20px; /* Ajusta o espaçamento entre os elementos */
+    }
+
+    .logo-container {
+        align-self: flex-start; /* Mantém a logo no topo, mas alinha à direita */
+    }
+
+    .input-section {
+        margin-left: 0; /* Remove a margem esquerda para centralizar a seção de input */
+        margin-bottom: 0; /* Remove a margem inferior para ajustar o layout */
+        width: 100%; /* Garante que a seção de input ocupe 100% da largura disponível */
+    }
+
+    .input-section .buttons {
+        display: flex;
+        justify-content: center; /* Centraliza os botões horizontalmente */
+        align-items: center; /* Centraliza os botões verticalmente */
+        gap: 24px;
+    }
+
+    .input-section .buttons button {
+        padding: 15px 18%;
+        border: none;
+        border-radius: 20px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .output-section {
+        min-width: 92%; /* Garante que a seção de output ocupe 100% da largura disponível */
+        margin-top: 20px; /* Ajusta o espaçamento entre a seção de input e a de output */
+        margin-bottom: 40px; /* Ajusta a margem inferior conforme necessário */
+    }
+
+    .footer {
+        display: none;
+    }
+
+    @media (max-width: 375px) {
+        .input-section .buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza os botões horizontalmente */
+            align-items: center; /* Centraliza os botões verticalmente */
+        }
+
+        .input-section .buttons button {
+            border: none;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            width: 100%; /* Garante que os botões ocupem a largura disponível */
+        }
+    }
+
+}
+
+
