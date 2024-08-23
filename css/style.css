@@ -206,24 +206,24 @@ body {
 @media (max-width: 768px) {
     .conteudo {
         flex-direction: column;
-        align-items: center; /* Centraliza os elementos */
-        gap: 20px; /* Ajusta o espaçamento entre os elementos */
+        align-items: center; 
+        gap: 20px; 
     }
 
     .logo-container {
-        align-self: flex-start; /* Mantém a logo no topo, mas alinha à direita */
+        align-self: flex-start; 
     }
 
     .input-section {
-        margin-left: 0; /* Remove a margem esquerda para centralizar a seção de input */
-        margin-bottom: 0; /* Remove a margem inferior para ajustar o layout */
-        width: 100%; /* Garante que a seção de input ocupe 100% da largura disponível */
+        margin-left: 0; 
+        margin-bottom: 0; 
+        width: 100%; 
     }
 
     .input-section .buttons {
         display: flex;
-        justify-content: center; /* Centraliza os botões horizontalmente */
-        align-items: center; /* Centraliza os botões verticalmente */
+        justify-content: center; 
+        align-items: center; 
         gap: 24px;
     }
 
@@ -236,9 +236,8 @@ body {
     }
 
     .output-section {
-        min-width: 92%; /* Garante que a seção de output ocupe 100% da largura disponível */
-        margin-top: 20px; /* Ajusta o espaçamento entre a seção de input e a de output */
-        margin-bottom: 40px; /* Ajusta a margem inferior conforme necessário */
+        min-width: 92%; 
+        margin-bottom: 40px; 
     }
 
     .footer {
@@ -247,18 +246,14 @@ body {
 
     @media (max-width: 375px) {
         .input-section .buttons {
-            display: flex;
             flex-direction: column;
-            justify-content: center; /* Centraliza os botões horizontalmente */
-            align-items: center; /* Centraliza os botões verticalmente */
+            gap: 16px; 
+            width: 100%;
         }
-
+    
         .input-section .buttons button {
-            border: none;
-            border-radius: 20px;
-            font-size: 12px;
-            cursor: pointer;
-            width: 100%; /* Garante que os botões ocupem a largura disponível */
+            width: 90%; 
+            padding: 15px;
         }
     }
 
